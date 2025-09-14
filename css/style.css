@@ -750,9 +750,7 @@ header.fixed ~ .margin {
 }
 .about-title span {
   display: inline-block;
-  width: 15%;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding: 15px 3% 20px 3%;
   margin-bottom: 20px;
   border-bottom: 2px solid #fff;
 }
@@ -842,9 +840,7 @@ header.fixed ~ .margin {
 }
 .portfolio-title span {
   display: inline-block;
-  width: 15%;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding: 15px 3% 20px 3%;
   margin-bottom: 20px;
   border-bottom: 2px solid #fff;
 }
@@ -992,9 +988,7 @@ header.fixed ~ .margin {
 }
 .contacts-title span {
   display: inline-block;
-  width: 15%;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding: 15px 3% 20px 3%;
   margin-bottom: 20px;
   border-bottom: 2px solid #fff;
 }
@@ -1154,9 +1148,6 @@ canvas {
   .about-con {
     flex-wrap: wrap;
   }
-  .about-title span {
-    width: 25%;
-  }
   .about-con_el {
     width: 100%;
     text-align: center;
@@ -1222,11 +1213,6 @@ canvas {
   }
   .top {
     height: calc(100vh - 115px);
-  }
-  .about-title span,
-  .portfolio-title span,
-  .contacts-title span {
-    width: 35%;
   }
   .portfolio-info_item {
     margin-bottom: 20px;

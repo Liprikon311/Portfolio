@@ -1171,6 +1171,12 @@ canvas {
   }
 }
 @media (max-width: 768px) {
+  .header.fixed .header-body {
+    height: 70px;
+  }
+  .header.fixed .header-title {
+    display: none;
+  }
   .header-body {
     height: 115px;
     flex-wrap: wrap;
@@ -1211,6 +1217,9 @@ canvas {
     width: 100%;
     font-size: 20px;
     padding-bottom: 15px;
+  }
+  header.fixed ~ .margin {
+    height: 115px;
   }
   .top {
     height: calc(100vh - 115px);

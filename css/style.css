@@ -536,6 +536,7 @@ body.dark .footer {
   display: flex;
   width: 42px;
   height: 42px;
+  margin-left: 10px;
   position: relative;
   cursor: pointer;
   border: 2px solid transparent;

@@ -309,72 +309,48 @@ function themeCheck() {
 
 const portfolioInfo      = document.querySelector('.portfolio-info'),
       portfolioItemsData = {
-            FirstProject: {
-                name: 'Play Games',
-                imgSrc: './src/img/playgames.png'
-            },
-            SecondProject: {
-                name: 'Калькулятор',
-                imgSrc: './src/img/calculator.png'
-            },
-            ThirdProject: {
-                name: 'SketchBox',
-                imgSrc: './src/img/sketchbox.png'
-            },
-            FourthProject: {
-                name: 'Мангака',
-                imgSrc: './src/img/mangaka.png'
-            }
+            // FirstProject: {
+            //     name: '',
+            //     imgSrc: './src/img/',
+            //     description: '',
+            //     link: ''
+            // }
+
+            // SecondProject: {
+            //     name: '',
+            //     imgSrc: './src/img/',
+            //     description: '',
+            //     link: ''
+            // },
+            // ThirdProject: {
+            //     name: '',
+            //     imgSrc: './src/img/',
+            //     description: '',
+            //     link: ''
+            // },
+            // FourthProject: {
+            //     name: '',
+            //     imgSrc: './src/img/',
+            //     description: '',
+            //     link: ''
+            // }
       };
 
 portfolioInfo.innerHTML = `
     ${Object.values(portfolioItemsData).map(project => `
         <div class="portfolio-info_item">
             <div class="portfolio-info_img">
-                <img src="${project.imgSrc}">            
+                <img src="${project.imgSrc}">   
             </div>
-            <div class="portfolio-info_hover">
-                <div class="portfolio-info_name">${project.name}</div>
-                <div class="portfolio-info_btn">Подробнее</div>
-            </div>
-            <div class="portfolio-info_loop">
-                <img src="${project.imgSrc}">
-                <a class="portfolio-info_close link">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-                </a>
+            <div class="portfolio-info_body">
+                <h3 class="portfolio-info_title">${project.name}</h3>
+                <p class="portfolio-info_text">${project.description}</p>
+                <a href="${project.link}" class="portfolio-info_link">Подробнее</a>
             </div>
         </div>
     `
     ).join('')}
 `;
-
-const portfolioItems = document.querySelectorAll('.portfolio-info_item');
-
-portfolioItems.forEach(item => {
-    const portfolioInfoBtn = item.querySelector('.portfolio-info_btn'),
-          portfolioInfoImg = item.querySelector('.portfolio-info_img');
-    let   windowWidth = window.innerWidth;
-
-    window.addEventListener('resize', () => {
-        windowWidth = window.innerWidth;
-    });
-    if (windowWidth > 768) {
-        portfolioInfoBtn.addEventListener('click', () => {
-            item.querySelector('.portfolio-info_loop').classList.toggle('active');
-            body.classList.toggle('lock');
-        });
-    } else {
-        item.querySelector('.portfolio-info_hover').style.display = 'none';
-        portfolioInfoImg.addEventListener('click', () => {
-            item.querySelector('.portfolio-info_loop').classList.toggle('active');
-            body.classList.toggle('lock');
-        });
-    }
-    item.querySelector('.portfolio-info_close').addEventListener('click', () => {
-        item.querySelector('.portfolio-info_loop').classList.toggle('active');
-        body.classList.toggle('lock');
-    });
-});
 
 // Конец функции портфолио
 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizzashop</title>
+    <link rel="shortcut icon" href="./src/img/logo_pizza.svg">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="header-body">
+                <a href="#header" class="logo">pizzashop</a>
+                <ul class="header-menu">
+                    <li><a id="mainLink" href="#header" class="active">Главная</a></li>
+                    <li><a id="menuLink" href="#menu">Меню</a></li>
+                    <li><a id="eventsLink" href="#events">События</a></li>
+                    <li><a id="aboutLink" href="#about">О нас</a></li>
+                </ul>
+                <div class="header-actions">
+                    <a href="#" class="log-in">Войти</a>
+                    <a href="#" class="order"><img src="./src/img/shopping_bag.svg"></a>
+                    <div class="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Отступ под шапкой -->
+	    <div id="margin" class="margin"></div>
+
+        <div class="content">
+            
+            <section id="home">
+                <div class="home-body">
+                    <div class="home-title">
+                        <span>The Fastest</span>
+                        <span>Pizza</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#FF9100" /><stop offset="100%" style="stop-color:#FF3C00" /></linearGradient></defs><path d="m480-336 128-184H494l80-280H360v320h120v144ZM400-80v-320H280v-480h400l-80 280h160L400-80Zm80-400H360h120Z" fill="url(#grad)"/></svg>
+                        Delivery
+                    </div>
+                    <div class="home-text">
+                        Мы доставим вкуснейшую пиццу прямо к вашему порогу в течении 30 минут, если курьер опоздает - <span>пицца бесплатная</span>!
+                    </div>
+                </div>
+                <div class="home-img">
+                    <img src="./src/img/home-pizza.png">
+                </div>
+            </section>
+
+            <section id="menu">
+                <div class="menu-title">Меню</div>
+                <div class="menu-nav">
+                    <div  onclick="selectCategory('setsCategory')" class="menu-nav_item active">Сеты</div>
+                    <div  onclick="selectCategory('pizzaCategory')" class="menu-nav_item">Пицца</div>
+                    <div  onclick="selectCategory('snacksCategory')" class="menu-nav_item">Закуски</div>
+                    <div  onclick="selectCategory('drinksCategory')" class="menu-nav_item">Напитки</div>
+                    <div  onclick="selectCategory('saladsCategory')" class="menu-nav_item">Салаты</div>
+                    <div  onclick="selectCategory('dessertsCategory')" class="menu-nav_item">Десерты</div>
+                    <div  onclick="selectCategory('saucesCategory')" class="menu-nav_item">Соусы</div>
+                </div>
+
+                <div id="setsCategory" class="menu-list active"></div>
+                <div id="pizzaCategory" class="menu-list dis-none"></div>
+                <div id="snacksCategory" class="menu-list dis-none"></div>
+                <div id="drinksCategory" class="menu-list dis-none"></div>
+                <div id="saladsCategory" class="menu-list dis-none"></div>
+                <div id="dessertsCategory" class="menu-list dis-none"></div>
+                <div id="saucesCategory" class="menu-list dis-none"></div>
+            </section>
+
+            <section id="events">
+                <div class="events-elem">
+                    <div class="events-elem_title">Наш Instagram</div>
+                    <a href="https://instagram.com" class="events-elem_btn">Подробнее</a>
+                </div>
+                <div class="events-elem">
+                    <div class="events-elem_title">Наш блог</div>
+                    <a href="https://blog.example.com" class="events-elem_btn">Подробнее</a>
+                </div>
+                <div class="events-elem">
+                    <div class="events-title">События</div>
+                    <div class="events-text">В нашей пиццерии часто проводятся акции, которые позволят вам вкусно поесть по выгодной цене!</div>
+                </div>
+                <div class="events-elem">
+                    <div class="events-elem_title">Две пиццы за цену одной</div>
+                    <div class="events-elem_btn">Подробнее</div>
+                </div>
+                <div class="events-elem">
+                    <div class="events-elem_title">Бесплатное кофе за три пиццы</div>
+                    <div class="events-elem_btn">Подробнее</div>
+                </div>
+                <div class="events-elem">
+                    <div class="events-elem_title">Быстрая доставка до 30 минут</div>
+                    <div class="events-elem_btn">Подробнее</div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

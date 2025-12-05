@@ -309,31 +309,12 @@ function themeCheck() {
 
 const portfolioInfo      = document.querySelector('.portfolio-info'),
       portfolioItemsData = {
-            // FirstProject: {
-            //     name: '',
-            //     imgSrc: './src/img/',
-            //     description: '',
-            //     link: ''
-            // }
-
-            // SecondProject: {
-            //     name: '',
-            //     imgSrc: './src/img/',
-            //     description: '',
-            //     link: ''
-            // },
-            // ThirdProject: {
-            //     name: '',
-            //     imgSrc: './src/img/',
-            //     description: '',
-            //     link: ''
-            // },
-            // FourthProject: {
-            //     name: '',
-            //     imgSrc: './src/img/',
-            //     description: '',
-            //     link: ''
-            // }
+            PizzaShop: {
+                name: 'pizzashop',
+                imgSrc: './src/img/pizzashop.png',
+                description: 'Удобный и функциональный сайт для заказа пиццы онлайн с адаптивным дизайном.',
+                link: '../websites/pizzashop/main.html'
+            }
       };
 
 portfolioInfo.innerHTML = `

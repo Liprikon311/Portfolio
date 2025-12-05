@@ -842,12 +842,12 @@ header.fixed ~ .margin {
 }
 .portfolio-info {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .portfolio-info_item {
   width: 24%;
   height: 100%;
+  margin: 0 0.5% 1% 0.5%;
   position: relative;
   overflow: hidden;
   background-color: #fff;

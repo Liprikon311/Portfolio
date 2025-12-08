@@ -17,36 +17,25 @@
         <header class="header">
             <div class="header-body">
                 <a href="#header" class="logo">pizzashop</a>
-                <ul class="header-menu">
-                    <li><a id="mainLink" href="#header" class="active">Главная</a></li>
-                    <li><a id="menuLink" href="#menu">Меню</a></li>
-                    <li><a id="eventsLink" href="#events">События</a></li>
-                    <li><a id="aboutLink" href="#about">О нас</a></li>
-                </ul>
                 <div class="header-actions">
                     <a href="#" class="log-in">Войти</a>
                     <a href="#" class="order"><img src="./src/img/shopping_bag.svg"></a>
-                    <div class="burger-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
                 </div>
             </div>
         </header>
 
-        <!-- Отступ под шапкой -->
-	    <div id="margin" class="margin"></div>
+        <!-- Отступ шапки -->
+	    <div id="header-margin"></div>
 
         <div class="content">
             
             <section id="home">
                 <div class="home-body">
                     <div class="home-title">
-                        <span>The Fastest</span>
-                        <span>Pizza</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#FF9100" /><stop offset="100%" style="stop-color:#FF3C00" /></linearGradient></defs><path d="m480-336 128-184H494l80-280H360v320h120v144ZM400-80v-320H280v-480h400l-80 280h160L400-80Zm80-400H360h120Z" fill="url(#grad)"/></svg>
-                        Delivery
+                        <span>Быстрейшая</span>
+                        <span>Доставка</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#FF9100" /><stop offset="100%" style="stop-color:#FF3C00" /></linearGradient></defs><path d="m480-336 128-184H494l80-280H360v320h120v144ZM400-80v-320H280v-480h400l-80 280h160L400-80Zm80-400H360h120Z" fill="url(#grad)"/></svg>
+                        Пиццы
                     </div>
                     <div class="home-text">
                         Мы доставим вкуснейшую пиццу прямо к вашему порогу в течении 30 минут, если курьер опоздает - <span>пицца бесплатная</span>!
@@ -70,45 +59,50 @@
                 </div>
 
                 <div id="setsCategory" class="menu-list active"></div>
-                <div id="pizzaCategory" class="menu-list dis-none"></div>
-                <div id="snacksCategory" class="menu-list dis-none"></div>
-                <div id="drinksCategory" class="menu-list dis-none"></div>
-                <div id="saladsCategory" class="menu-list dis-none"></div>
-                <div id="dessertsCategory" class="menu-list dis-none"></div>
-                <div id="saucesCategory" class="menu-list dis-none"></div>
-            </section>
-
-            <section id="events">
-                <div class="events-elem">
-                    <div class="events-elem_title">Наш Instagram</div>
-                    <a href="https://instagram.com" class="events-elem_btn">Подробнее</a>
-                </div>
-                <div class="events-elem">
-                    <div class="events-elem_title">Наш блог</div>
-                    <a href="https://blog.example.com" class="events-elem_btn">Подробнее</a>
-                </div>
-                <div class="events-elem">
-                    <div class="events-title">События</div>
-                    <div class="events-text">В нашей пиццерии часто проводятся акции, которые позволят вам вкусно поесть по выгодной цене!</div>
-                </div>
-                <div class="events-elem">
-                    <div class="events-elem_title">Две пиццы за цену одной</div>
-                    <div class="events-elem_btn">Подробнее</div>
-                </div>
-                <div class="events-elem">
-                    <div class="events-elem_title">Бесплатное кофе за три пиццы</div>
-                    <div class="events-elem_btn">Подробнее</div>
-                </div>
-                <div class="events-elem">
-                    <div class="events-elem_title">Быстрая доставка до 30 минут</div>
-                    <div class="events-elem_btn">Подробнее</div>
-                </div>
+                <div id="pizzaCategory" class="menu-list"></div>
+                <div id="snacksCategory" class="menu-list"></div>
+                <div id="drinksCategory" class="menu-list"></div>
+                <div id="saladsCategory" class="menu-list"></div>
+                <div id="dessertsCategory" class="menu-list"></div>
+                <div id="saucesCategory" class="menu-list"></div>
             </section>
 
         </div>
 
+        <!-- Отступ футера -->
+        <div id="footer-margin"></div>
+
+        <footer id="footer">
+            <div class="footer-body">
+                <div class="footer-body_legal">
+                    <span>pizzashop</span>
+                    <span>© 2025</span>
+                </div>
+                <div class="footer-body_social">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" class="social-link-svg" aria-hidden="true"><path d="M29.56 24.55a5 5 0 0 0-5 5v80.88a5 5 0 0 0 5 5H73.1V80.26H61.25V66.53H73.1V56.41c0-11.74 7.17-18.13 17.65-18.13a97 97 0 0 1 10.58.54v12.27h-7.26c-5.7 0-6.8 2.71-6.8 6.68v8.76h13.59l-1.78 13.73H87.27v35.2h23.17a5 5 0 0 0 5-5v-80.9a5 5 0 0 0-5-5H29.56Z"></path></svg>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" class="social-link-svg" aria-hidden="true"><path d="M49.91 22.28A27.69 27.69 0 0 0 22.28 50v40a27.68 27.68 0 0 0 27.62 27.69h40.19A27.68 27.68 0 0 0 117.72 90V50A27.69 27.69 0 0 0 90.1 22.3H49.91Zm0 8.2h40.18A19.34 19.34 0 0 1 109.54 50v40a19.33 19.33 0 0 1-19.44 19.49H49.91A19.33 19.33 0 0 1 30.47 90V50a19.33 19.33 0 0 1 19.44-19.51Zm45.71 8.2a5.74 5.74 0 1 0 5.72 5.74 5.73 5.73 0 0 0-5.73-5.73ZM70 45.43A24.57 24.57 0 1 0 94.52 70 24.6 24.6 0 0 0 70 45.43m0 8.2A16.37 16.37 0 1 1 53.67 70 16.29 16.29 0 0 1 70 53.63"></path></svg>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" class="social-link-svg" aria-hidden="true"><path d="M70 30.36c-22.31 0-44.61 1.71-49.51 5.12-9.8 6.83-9.8 62.19 0 69s89.22 6.83 99 0 9.8-62.19 0-69c-4.9-3.42-27.21-5.12-49.51-5.12ZM58.69 53.43 87.39 70l-28.7 16.57z"></path></svg>
+                    </a>
+                </div>    
+            </div>
+        </footer>
+
     </div>
 
+    <!-- Модальное окно входа -->
+    <div class="login active">
+        <div class="login-body">
+            <div class="login-body_number"></div>
+            <div class="login-body_sms"></div>
+        </div>
+    </div>
+    
+    
     <script src="./js/main.js"></script>
 
 </body>

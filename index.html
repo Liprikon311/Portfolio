@@ -5,242 +5,162 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Odilbek</title>
+	<title>Sobirov Odil</title>
 	<link rel="shortcut icon" href="./src/img/logo.png">
 	<link rel="stylesheet" href="./css/style.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
-<!-- Кнопка прокрутки вверх -->
-<div class="scroll-up">
-	<svg viewBox="-2 -2 52 52">
-		<path d="M24,0 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48"></path>
-	</svg>
-</div>
-
-<!-- Начало обертки сайта -->
-
-<div class="wrapper">
-
-	<!-- Шапка сайта -->
-	<header id="header" class="header">
-		<div class="header-container container">
-			<div class="header-body">
-
-				<!-- Логотип сайта -->
-				<a href="#header" class="logo">Liprikon</a>
-
-				<!-- Заголовок сайта -->
-				<div class="header-title" data-aos="fade-down">Сайт-портфолио WEB-разработчика</div>
-				
-				<div class="header-fixed">
-					<!-- Бургер меню -->
-					<div class="header-burger">
-						<div class="header-burger_first"></div>
-						<div class="header-burger_second"></div>
-						<div class="header-burger_third"></div>
-					</div>
-					
-					<!-- Кнопка переключения темы -->
-					<div class="header-theme">
-						<svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
-					</div>
-				</div>
-				
-            </div>
-		</div>
-	</header>
-
-	<!-- Отступ под шапкой -->
-	<div id="margin" class="margin"></div>
-
-	<!-- Меню сайта -->
-	<div class="header-menu">
-		<ul>
-			<li><a href="#header" class="header-menu_main">Главная</a></li>
-			<li><a href="#about">Обо мне</a></li>
-			<li><a href="#portfolio">Портфолио</a></li>
-			<li><a href="#contacts">Контакты</a></li>
-		</ul>
+	<div class="burger">
+		<div class="burger-item"></div>
+		<div class="burger-item"></div>
+		<div class="burger-item"></div>
 	</div>
 
-	<!-- Начало наполнения -->
-	<section class="top">
-		<div class="container">
-			<div class="my-name">Собиров Одил</div>
-			<div class="my-profession" data-aos="fade-up">WEB-РАЗРАБОТЧИК / HTML-ВЕРСТАЛЬЩИК / JAVASCRIPT-РАЗРАБОТЧИК</div>
-			<div class="bottom-arrow_con">
-				<a href="#about" class="bottom-arrow">
-					<img src="./src/img/arrow-down_l.svg">
+	<nav class="navbar">
+		<div class="nav-logo">
+			<a href="#home" class="nav-logo-link">
+				<img src="./src/img/logo.png">
+			</a>
+		</div>
+		<ul class="navbar-menu">
+			<li class="navbar-item">
+				<a href="#home" class="navbar-link active">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="512" height="512">
+						<path d="M19,24H5c-2.757,0-5-2.243-5-5V9.724c0-1.665,.824-3.215,2.204-4.145L9.203,.855c1.699-1.146,3.895-1.146,5.594,0l7,4.724c1.379,.93,2.203,2.479,2.203,4.145v9.276c0,2.757-2.243,5-5,5ZM12,1.997c-.584,0-1.168,.172-1.678,.517L3.322,7.237c-.828,.558-1.322,1.487-1.322,2.486v9.276c0,1.654,1.346,3,3,3h14c1.654,0,3-1.346,3-3V9.724c0-.999-.494-1.929-1.321-2.486L13.678,2.514c-.51-.345-1.094-.517-1.678-.517Z"/>
+					</svg>
+       			</a>
+				<div id="#homeHover" class="navbar-hover">Главная</div>
+			</li>
+			<li class="navbar-item">
+				<a href="#about" class="navbar-link">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="512" height="512">
+						<path d="M21,24H19V18.957A2.96,2.96,0,0,0,16.043,16H7.957A2.96,2.96,0,0,0,5,18.957V24H3V18.957A4.963,4.963,0,0,1,7.957,14h8.086A4.963,4.963,0,0,1,21,18.957Z"/>
+						<path d="M12,12a6,6,0,1,1,6-6A6.006,6.006,0,0,1,12,12ZM12,2a4,4,0,1,0,4,4A4,4,0,0,0,12,2Z"/>
+					</svg>
+       			</a>
+				<div id="#aboutHover" class="navbar-hover">Обо мне</div>
+			</li>
+			<li class="navbar-item">
+				<a href="#projects" class="navbar-link">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="512" height="512">
+						<path d="m9.914,13.747l-.363-4.221h1.042l.249,3.158,1.209-2.327,1.209,2.327.247-3.158h1.044l-.363,4.221c-.031.44-.337.779-.706.779-.244,0-.471-.151-.601-.4l-.831-1.6-.831,1.6c-.129.249-.356.4-.601.4-.368,0-.675-.339-.706-.779Zm6.654.779c.244,0,.471-.151.601-.4l.831-1.6.831,1.6c.129.249.356.4.601.4.368,0,.675-.339.706-.779l.363-4.221h-1.044l-.247,3.158-1.209-2.327-1.209,2.327-.249-3.158h-1.042l.363,4.221c.031.44.337.779.706.779Zm-12.706-.779c.031.44.337.779.706.779.244,0,.471-.151.601-.4l.831-1.6.831,1.6c.129.249.356.4.601.4.368,0,.675-.339.706-.779l.363-4.221h-1.044l-.247,3.158-1.209-2.327-1.209,2.327-.249-3.158h-1.042l.363,4.221Zm20.137-1.747c0,6.617-5.383,12-12,12S0,18.617,0,12,5.383,0,12,0s12,5.383,12,12ZM14.604,2.356c.769.955,1.638,2.195,2.362,3.644h3.015c-1.321-1.753-3.201-3.056-5.377-3.644Zm-2.604.056c-.679.721-1.76,1.986-2.692,3.588h5.383c-.932-1.602-2.012-2.867-2.692-3.588Zm-7.981,3.588h3.015c.725-1.449,1.593-2.689,2.362-3.644-2.176.588-4.056,1.891-5.377,3.644Zm-2.019,6c0,1.422.303,2.774.841,4h18.318c.538-1.226.841-2.578.841-4s-.303-2.774-.841-4H2.841c-.538,1.226-.841,2.578-.841,4Zm7.308,6c.932,1.602,2.012,2.867,2.692,3.588.679-.721,1.76-1.986,2.692-3.588h-5.383Zm.088,3.644c-.769-.955-1.638-2.195-2.362-3.644h-3.015c1.321,1.753,3.201,3.056,5.377,3.644Zm10.585-3.644h-3.015c-.725,1.449-1.593,2.689-2.362,3.644,2.176-.588,4.056-1.891,5.377-3.644Z"/>
+					</svg>
+        		</a>
+				<div id="#projectsHover" class="navbar-hover">Проекты</div>
+			</li>
+		</ul>
+
+		<ul class="navbar-contact">
+			<li class="navbar-elem">
+				<a href="tel:+998954354885" class="navbar-href">
+					<img src="./src/img/phone.svg">
 				</a>
-			</div>
-		</div>
-	</section>
+				<div id="#phoneHover" class="navbar-hover">Телефон</div>
+			</li>
+			<li class="navbar-elem">
+				<a href="https://t.me/odil311" class="navbar-href">
+					<img src="./src/img/telegram.svg">
+				</a>
+				<div id="#telegramHover" class="navbar-hover">Телеграм</div>
+			</li>
+			<li class="navbar-elem">
+				<a href="mailto:odylbek311@gmail.com" class="navbar-href">
+					<img src="./src/img/mail.svg">
+				</a>
+				<div id="#mailHover" class="navbar-hover">Почта</div>
+			</li>
+			<li class="navbar-elem">
+				<a href="https://github.com/Liprikon311" class="navbar-href">
+					<img src="./src/img/github.svg">
+				</a>
+				<div id="#githubHover" class="navbar-hover">GitHub</div>
+			</li>
+		</ul>
+	</nav>
 
-	<section id="about" class="about">
-		<div class="container">
-			<div class="about-title"><span data-aos="fade-up">Обо мне</span></div>
-			<div class="about-con">
-				<div class="about-con_el" data-aos="fade-right">
-					<div class="about-con_title">Немного о себе</div>
-					<div class="about-con_img">
-						<img src="./src/img/me1_light.svg" class="about-con_img-a">
-					</div>
-					<div class="about-con_text">
-						Доброго времени суток,меня зовут Собиров Одил. Я начинающий web-разработчик. Занимаюсь адаптивной версткой и программированием сайтов,а так же доработкой,добавляя полный функционал на сайт!
-					</div>
+	<div class="wrapper">
+		<section id="home" class="visible">
+			<div class="home-left">
+				<div class="home-title">
+					<div>Привет,</div>
+					<div>Меня зовут Одил,</div>
+					<div>я веб-разработчик.</div>
 				</div>
-				<div class="about-con_el" data-aos="fade-up">
-					<div class="about-con_title">Знания и навыки</div>
-					<div class="about-con_img">
-						<img src="./src/img/me2_light.svg" class="about-con_img-b">
-					</div>
-					<div class="about-con_text">
-						Языки программирования: JavaScript, PHP, MySQL.<br>
-						Язык разметки: HTML5.<br>
-						Таблицы стилей: CSS3, SCSS, SASS.<br>
-						Фреймворки и библиотеки: Bootstrap, jQuery.<br>
-					</div>
-				</div>
-				<div class="about-con_el" data-aos="fade-left">
-					<div class="about-con_title">Саморазвитие</div>
-					<div class="about-con_img">
-						<img src="./src/img/me3_light.svg" class="about-con_img-c">
-					</div>
-					<div class="about-con_text">
-						Курсы в интернете, видеокурсы, книги, документация, форумы, статьи...
-					</div>
+				<div class="home-subtitle">/ Front End Developer /</div>
+				<div class="home-btn_cont">
+					<a href="#projects" class="home-button">Мои проекты</a>
 				</div>
 			</div>
-		</div>
-		<div class="container">
-			<div class="about-title" data-aos="fade-up">Уровни знаний</div>
-			<div class="about-cont">
-				<div class="about-cont_elem">
-					<div class="about-cont_title">HTML5|CSS3</div>
-					<div class="about-cont_progress">
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-					</div>
+			<div class="home-right">
+				<div class="home-circle left"></div>
+				<div class="home-circle right"></div>
+
+				<div class="home-line"></div>
+				<div class="home-line"></div>
+				<div class="home-line"></div>
+				<div class="home-line"></div>
+				<div class="home-line"></div>
+			</div>
+			<a href="#about" class="home-int">
+				<div class="home-int_el"></div>
+			</a>
+		</section>
+		<section id="about">
+			<div class="about-title">Кратко обо мне</div>
+			<div class="about-container">
+				<div class="about-text">
+					<p>Я увлечен созданием красивых и функциональных веб-сайтов и приложений. Я стремлюсь создавать интуитивно понятные пользовательские интерфейсы и обеспечивать отличную производительность веб-приложений. В свободное время я люблю изучать новые технологии и совершенствовать свои навыки в области веб-разработки.</p>
 				</div>
-				<div class="about-cont_elem">
-					<div class="about-cont_title">jQuery|JavaScript</div>
-					<div class="about-cont_progress">
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-					</div>
-				</div>
-				<div class="about-cont_elem">
-					<div class="about-cont_title">PHP|MySQL</div>
-					<div class="about-cont_progress">
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
-						<div class="progress_el"></div>
+			</div>
+			<div class="about-teq">
+				<ul class="about-teq_list">
+					<li class="about-teq_item">
+						<img src="./src/img/html.png" alt="HTML">
+					</li>
+					<li class="about-teq_item">
+						<img src="./src/img/css.png" alt="CSS">
+					</li>
+					<li class="about-teq_item">
+						<img src="./src/img/js.png" alt="JavaScript">
+					</li>
+					<li class="about-teq_item">
+						<img src="./src/img/sass.png" alt="SASS">
+					</li>
+					<li class="about-teq_item">
+						<img src="./src/img/git.png" alt="Git">
+					</li>
+					<li class="about-teq_item">
+						<img src="./src/img/bootstrap.png" alt="Bootstrap">
+					</li>
+					<li class="about-teq_item">
+						<img src="./src/img/jquery.png" alt="jQuery">
+					</li>
+					<li class="about-teq_item">AOS</li>
+				</ul>
+			</div>
+		</section>
+		<section id="projects">
+			<div class="projects-title">Мои работы</div>
+			<div class="projects-container">
+				<div class="projects-list">
+					<div class="projects-item">
+					<a href="./websites/pizzashop/main.html" class="projects-link">
+						<img src="./src/img/pizzashop.png" alt="Pizza Shop">
+						<div class="projects-name">Pizza Shop</div>
+						<div class="projects-category">Пэт-проект</div>
+						<div class="projects-text">Простой сайт для заказа пиццы (HTML, CSS, JavaScript)</div>
+					</a>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 
-	<section id="portfolio" class="portfolio">
-		<div class="container">
-			<div class="portfolio-title"><span data-aos="fade-up">Портфолио</span></div>
-			<div class="portfolio-info">
-				
-			</div>
-		</div>
-	</section>
-
-	<section id="contacts" class="contacts">
-		<div class="container">
-			<div class="contacts-title"><span data-aos="fade-up">Контакты</span></div>
-			<div class="contacts-con">
-				<div class="contacts-con_el" data-aos="fade-right">
-					<div class="contacts-con_img git-img">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="1 1 22 22" width="50" height="50">
-  							<path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"/>
-						</svg>
-					</div>
-					<div class="contacts-con_title">GitHub</div>
-					<a class="contacts-con_text git" href="https://github.com/Liprikon311">Liprikon311</a>
-				</div>
-				<div class="contacts-con_el" data-aos="fade-left">
-					<div class="contacts-con_img email-img">
-						<img src="./src/img/mail_l.svg">
-					</div>
-					<div class="contacts-con_title">Email</div>
-					<div class="contacts-con_text email">odylbek311@gmail.com</div>
-				</div>
-				<div class="contacts-con_el" data-aos="fade-right">
-					<div class="contacts-con_img telegram-img">
-						<img src="./src/img/telegram_l.svg">
-					</div>
-					<div class="contacts-con_title">Telegram</div>
-					<div class="contacts-con_text telegram">@odil311</div>
-				</div>
-				<div class="contacts-con_el" data-aos="fade-left">
-					<div class="contacts-con_img call-img">
-						<img src="./src/img/call_l.svg">
-					</div>
-					<div class="contacts-con_title">Номер телефона</div>
-					<div class="contacts-con_text call">+998 (95) 435-48-85</div>
-				</div>
-				<div class="text-copied">Текст скопирован!</div>
-			</div>
-		</div>
-	</section>
-	<!-- Конец наполнения -->
-
-	<footer class="footer">
-		<div class="container">
-			<div class="footer-text">© 2025 Собиров Одил. Профессиональное создание сайтов</div>
-		</div>
-	</footer>
-
-</div>
-<!-- Конец обертки сайта -->
-
-<!-- Скрипт анимации частиц -->
-<script src="./js/particles.js"></script>
-
-<!-- Скрипты появления с AOS -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-	AOS.init({
-		offset: 0, // смещение (в px) от исходной точки срабатывания
-		duration: 200, // Значения от 0 до 3000, с шагом 50мс
-	});
-  </script>
-
-<!-- Главный скрипт -->
-<script src="./js/main.js"></script>
+<!-- Скрипты -->
+ <script src="./js/delete-tags.js"></script>
+<script src="./js/script.js"></script>
 
 </body>
 

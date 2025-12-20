@@ -78,10 +78,3 @@ aboutTeqItems.forEach(item => {
     });
 });
 /* Конец скриптов для секции о себе */
-
-
-// Авто-выбор секции "Проекты" при загрузке страницы
-navbarLinks.forEach(navLink => {navLink.classList.remove('active')});
-    sections.forEach(section => {section.classList.remove('visible')});
-    navbarLinks[2].classList.add('active');
-    sections[2].classList.add('visible');

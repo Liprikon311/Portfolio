@@ -690,15 +690,14 @@ section {
 .projects-list {
     height: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     overflow-x: auto;
     padding: 25px;
-    gap: 20px;
+    gap: 40px 20px;
 }
 
 .projects-item {
-    width: 25%;
-    height: 95%;
+    width: calc(25% - 2.5% - 20px);
     background: var(--color-hover);
     box-shadow: 5px 5px 10px var(--color-secondary);
     overflow: hidden;
@@ -716,12 +715,12 @@ section {
 
 @media (hover: hover) {
     .projects-item:hover {
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        -o-transform: scale(1.1);
-    }
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+}
 }
 
 .projects-link {
@@ -763,6 +762,63 @@ section {
 
 
 /* Начало адаптивных стилей */
+@media (max-width: 1100px) {
+    #home {
+        flex-direction: column;
+    }
+    .home-left {
+        width: 100vw;
+        height: 50vh;
+        padding: 0;
+        text-align: center;
+        justify-content: flex-end;
+    }
+    .home-right {
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-circle.left {
+        width: 350px;
+        height: 350px;
+        position: static;
+    }
+    .home-circle.right {
+        width: 350px;
+        height: 350px;
+        position: static;
+    }
+    .home-line {
+        left: 50%;
+    }
+
+    #about {
+        padding: 100px;
+    }
+    .about-title {
+        grid-column: 1/3;
+    }
+    .about-container {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .about-teq {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+    #projects {
+        padding: 100px;
+    }
+    .projects-item {
+        width: calc(50% - 2.5% - 20px);
+    }
+    .projects-item:nth-child(odd) {
+        margin-left: 5%;
+    }
+}
 @media (max-width: 1024px) {
     .burger {
         display: flex;
@@ -845,69 +901,9 @@ section {
         height: 100%;
     }
 
-
     .wrapper {
         width: 100vw;
         margin-left: 0;
-    }
-
-
-    #home {
-        flex-direction: column;
-    }
-    .home-left {
-        width: 100vw;
-        height: 50vh;
-        padding: 0;
-        text-align: center;
-        justify-content: flex-end;
-    }
-    .home-right {
-        width: 100vw;
-        height: 50vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .home-circle.left {
-        width: 350px;
-        height: 350px;
-        position: static;
-    }
-    .home-circle.right {
-        width: 350px;
-        height: 350px;
-        position: static;
-    }
-    .home-line {
-        left: 50%;
-    }
-
-
-    #about {
-        padding: 100px;
-    }
-    .about-title {
-        grid-column: 1/3;
-    }
-    .about-container {
-        grid-column: 1/3;
-        grid-row: 2/3;
-    }
-    .about-teq {
-        grid-column: 1/3;
-        grid-row: 3/5;
-    }
-
-
-    #projects {
-        padding: 100px;
-    }
-    .projects-item {
-        width: 50%;
-        height: 90%;
-        margin-top: 5%;
-        margin-left: 5%;
     }
 }
 
